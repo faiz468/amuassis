@@ -12,7 +12,7 @@ import time
 
 # Load environment variables
 load_dotenv()
-os.environ['NVIDIA_API_KEY'] = os.getenv("NVIDIA_API_KEY")
+os.environ['NVIDIA_API_KEY'] = st.text_input("API Key")
 
 # Initialize title for Streamlit app
 st.title("AMU Admission Assistant")
